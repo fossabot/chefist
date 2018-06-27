@@ -1,0 +1,92 @@
+[
+    {
+        "id": 649036,
+        "title": "Korean Candy Chicken",
+        "image": "https://spoonacular.com/recipeImages/649036-312x231.jpg",
+        "imageType": "jpg",
+        "usedIngredientCount": 2,
+        "missedIngredientCount": 2,
+        "likes": 1
+    },
+    {
+        "id": 643832,
+        "title": "Fried Xocai Healthy Chocolate Stuffed Wontons",
+        "image": "https://spoonacular.com/recipeImages/643832-312x231.jpg",
+        "imageType": "jpg",
+        "usedIngredientCount": 2,
+        "missedIngredientCount": 3,
+        "likes": 1
+    },
+    {
+        "id": 641897,
+        "title": "Easy Chicken Piccata",
+        "image": "https://spoonacular.com/recipeImages/641897-312x231.jpg",
+        "imageType": "jpg",
+        "usedIngredientCount": 2,
+        "missedIngredientCount": 3,
+        "likes": 1
+    },
+    {
+        "id": 157995,
+        "title": "Curried Cracker-Coated Chicken",
+        "image": "https://spoonacular.com/recipeImages/157995-312x231.jpg",
+        "imageType": "jpg",
+        "usedIngredientCount": 2,
+        "missedIngredientCount": 3,
+        "likes": 0
+    },
+    {
+        "id": 638035,
+        "title": "Chicken Cordon Bleu",
+        "image": "https://spoonacular.com/recipeImages/638035-312x231.jpg",
+        "imageType": "jpg",
+        "usedIngredientCount": 2,
+        "missedIngredientCount": 4,
+        "likes": 161
+    },
+    {
+        "id": 641836,
+        "title": "Easy Baked Parmesan Chicken",
+        "image": "https://spoonacular.com/recipeImages/641836-312x231.jpg",
+        "imageType": "jpg",
+        "usedIngredientCount": 2,
+        "missedIngredientCount": 4,
+        "likes": 92
+    },
+    {
+        "id": 641896,
+        "title": "Easy Chicken Cordon Bleu",
+        "image": "https://spoonacular.com/recipeImages/641896-312x231.jpg",
+        "imageType": "jpg",
+        "usedIngredientCount": 2,
+        "missedIngredientCount": 4,
+        "likes": 21
+    },
+    {
+        "id": 635992,
+        "title": "Breaded Chicken Fingers",
+        "image": "https://spoonacular.com/recipeImages/635992-312x231.jpg",
+        "imageType": "jpg",
+        "usedIngredientCount": 2,
+        "missedIngredientCount": 4,
+        "likes": 1
+    },
+    {
+        "id": 640518,
+        "title": "Cream Corn & Chicken Soup",
+        "image": "https://spoonacular.com/recipeImages/640518-312x231.jpg",
+        "imageType": "jpg",
+        "usedIngredientCount": 2,
+        "missedIngredientCount": 4,
+        "likes": 1
+    },
+    {
+        "id": 640836,
+        "title": "Crispy Santa Fe Chicken",
+        "image": "https://spoonacular.com/recipeImages/640836-312x231.jpg",
+        "imageType": "jpg",
+        "usedIngredientCount": 2,
+        "missedIngredientCount": 4,
+        "likes": 1
+    }
+]
