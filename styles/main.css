@@ -34,16 +34,6 @@ header img {
     margin-right: auto;
 }
 
-main {
-    position: relative;
-    background-color: #EEEEEE;
-    margin-top: -5.2rem;
-    
-    -webkit-border-radius: 0px 0px 5px 5px; 
-    -moz-border-radius:  0px 0px 5px 5px;
-    border-radius:  0px 0px 5px 5px;
-}
-
 .instructions p {
     font-size: 3.5rem;
     font-weight: bold;
@@ -61,7 +51,7 @@ main {
 
 input[type="text"] {
     height: 5.3rem !important;
-    width: 90%;
+    width: 100%;
     max-width:32rem !important;
     font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif;
     font-weight: normal;
@@ -73,10 +63,27 @@ input[type="text"] {
     -webkit-box-shadow: 3px 4px 6px -4px rgba(0,0,0,0.75);
 }
 
+.container {
+    background: #EEEEEE;
+    width: 100%;
+    -webkit-border-radius: 0px 0px 5px 5px; 
+    -moz-border-radius:  0px 0px 5px 5px;
+    border-radius:  0px 0px 5px 5px;
+
+}
+
+.js-search {
+    position: relative;
+    display: block;
+    width:98%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
 input[type="submit"] {
     border: 1px solid #bbb;
     border-radius: 3px;
-    
     height: 5.4rem !important;
     width: 15.9rem !important;
     color:black !important;
@@ -91,12 +98,94 @@ input[type="submit"] {
     background-color:white !important;
 }
 
+@media (min-width: 400px) {
+    .js-search {
+        position: relative;
+        display: block;
+        width:calc(100%/1.25);
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+@media (min-width: 550px) {
+    .js-search {
+        position: relative;
+        display: block;
+        width:calc(100%/2);
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    input[type="submit"] {
+        border: 1px solid #bbb;
+        border-radius: 3px;
+        height: 5.4rem !important;
+        width: 60% !important;
+        color:black !important;
+        font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: bold !important;
+        font-size: 2.8rem !important;
+        text-transform:lowercase !important;
+        box-shadow: 3px 4px 6px -4px rgba(0,0,0,0.75);
+        -moz-box-shadow: 3px 4px 6px -4px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 3px 4px 6px -4px rgba(0,0,0,0.75);
+        padding: 0px !important;
+        background-color:white !important;
+    }
+}
+
+@media (min-width: 750px) {
+    .js-search {
+        position: relative;
+        display: block;
+        width:calc(100%/2.75);
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    input[type="submit"] {
+        border: 1px solid #bbb;
+        border-radius: 3px;
+        
+        height: 5.4rem !important;
+        width: 50% !important;
+        color:black !important;
+        font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif;
+        font-weight: bold !important;
+        font-size: 2.8rem !important;
+        text-transform:lowercase !important;
+        box-shadow: 3px 4px 6px -4px rgba(0,0,0,0.75);
+        -moz-box-shadow: 3px 4px 6px -4px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 3px 4px 6px -4px rgba(0,0,0,0.75);
+        padding: 0px !important;
+        background-color:white !important;
+    }
+    .fab {
+        position:absolute;
+        height: 5.6rem;
+        width: 5.6rem;
+        right: 5px;
+        
+    }
+}
+
+@media (min-width: 1200px) {
+    .js-search {
+        position: relative;
+        display: block;
+        width:calc(100%/3);
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
 .fab {
     position:absolute;
     height: 5.6rem;
     width: 5.6rem;
-    left: auto;
-    margin-left: 10rem;;
+    right: 5px;
+    
 }
 
 .fab-action-button {
