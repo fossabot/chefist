@@ -82,9 +82,8 @@ input[type="text"] {
     margin-right:auto;
 }
 
-.summary-card {
-    width: 98%;
-    /* margin: 5px 10px; */
+.summary-card, .recipe-card {
+    /* width: 98%; */
     display: inline;
 }
 
@@ -114,7 +113,7 @@ input[type="submit"] {
         margin-right:auto;
     }
 
-    .summary-card {
+    .summary-card, .recipe-card {
         width:calc(100%/1.25);
     }
 }
@@ -128,7 +127,7 @@ input[type="submit"] {
         margin-right:auto;
     }
 
-    .summary-card{
+    .summary-card, .recipe-card {
         width:calc(100%/2);
     }
 
@@ -159,6 +158,9 @@ input[type="submit"] {
         margin-right:auto;
     }
 
+    .recipe-card {
+        width: calc(100%/2);
+    }
     .summary-card {
     width:calc(100%/2.75);
     }
@@ -233,7 +235,7 @@ input[type="submit"] {
     background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHdpZHRoPSIxOHB4IiBoZWlnaHQ9IjI5cHgiIHZpZXdCb3g9IjAgMCAxOCAyOSIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj4gICAgICAgIDx0aXRsZT5GaWxsIDE8L3RpdGxlPiAgICA8ZGVzYz5DcmVhdGVkIHdpdGggU2tldGNoLjwvZGVzYz4gICAgPGRlZnM+PC9kZWZzPiAgICA8ZyBpZD0iU3ltYm9scyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+ICAgICAgICA8ZyBpZD0iRHJpbmstUGFpcmluZ3MiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xOC4wMDAwMDAsIC0xMi4wMDAwMDApIiBmaWxsPSIjMjQ2RUI5Ij4gICAgICAgICAgICA8ZyBpZD0iRmlsbC0xIj4gICAgICAgICAgICAgICAgPHBhdGggZD0iTTMyLjgzMTU5NTIsMjUuODQ2OTg2NyBDMzYuMzg5ODc5MywyMS41NzQxNTA4IDM0Ljk2OTk4NzEsMTMuNTc0MjYyMyAzNC45MDgzMDI3LDEzLjIzNTA4MDQgTDM0Ljc3MjA4MzgsMTIuNSBMMTkuMDQyNzMxMiwxMi41IEwxOC45MDEzNzAzLDEzLjIyODYzMjQgQzE4LjgzNTgzMDMsMTMuNTY5MTk1OSAxNy4zNDg5NjM2LDIxLjU3NjU4NTIgMjAuODc5MTE5NiwyNS44NDgxMDUyIEMyMi4xMjMwNzE1LDI3LjM1MTY1NzkgMjMuODM4Njg2OSwyOC4xNjY0MTgxIDI1Ljk0MTE4NjcsMjguMzU2NjAzNCBMMjUuOTQxMTg2NywzNS4wMTU4ODQ3IEMyMi44NjMzODI4LDM1LjEzNjY4NDEgMTguNjMyODIxMiwzNS44NTc2MjE1IDE4LjYzMjgyMTIsMzguMDAyNDI4NSBDMTguNjMyODIxMiw0MC4zNzcyOTQ2IDIzLjgyMTg3NTgsNDEuMDEwODE3OSAyNi44ODU2OTc5LDQxLjAxMDgxNzkgQzI5Ljk1MTkyMTYsNDEuMDEwODE3OSAzNS4xMzk4OTA1LDQwLjM3NTk3ODcgMzUuMTM5ODkwNSwzOC4wMDI0Mjg1IEMzNS4xMzk4OTA1LDM1LjgzNDQ5NCAzMC44MjMyOTk4LDM1LjExOTk3NSAyNy43NDE3MTI2LDM1LjAxMDcxOTYgTDI3Ljc0MTcxMjYsMjguMzU2MzczMSBDMjkuODQ5MjQ1OSwyOC4xNjc0NjQzIDMxLjU3NTAyNjgsMjcuMzUyNzEwNyAzMi44MzIwNzIyLDI1Ljg0NjU5MTkgTDMyLjgzMTU5NTIsMjUuODQ2OTg2NyBaIE0yMC41NTM5MzYsMTQuMjk4MDI1NyBMMzMuMjQ1NDU2MywxNC4yOTgwMjU3IEMzMy4zNzc4MTk0LDE1LjM1OTUyMzQgMzMuNTQyMzExMSwxNy40MjcyMTY3IDMzLjMwMzI4NSwxOS41NjgzMzkyIEwyMC40NDk5MDQ5LDE5LjU2ODMzOTIgQzIwLjIzMDE1MzksMTcuNDI0ODE1MiAyMC40MTM5MjA3LDE1LjM1NzAyMzEgMjAuNTUzOTk4NSwxNC4yOTgwMjU3IEwyMC41NTM5MzYsMTQuMjk4MDI1NyBaIE0yNi44ODY4OTU0LDM5LjIxMTkzNTkgQzIzLjE0NDcwOTYsMzkuMjExOTM1OSAyMC45OTk3MzgxLDM4LjQyODAzNDMgMjAuNTAzOTYwMiwzOC4wMDEzNzU4IEMyMS4wMDEyODQzLDM3LjU3MzQzNDIgMjMuMTQ3NDA3MywzNi43OTA4MTU3IDI2Ljg4Njg5NTQsMzYuNzkwODE1NyBDMzAuNjI5MDgxMiwzNi43OTA4MTU3IDMyLjc3NTAzOTcsMzcuNTcyMTUxMiAzMy4yNzM3Nzg1LDM4LjAwMTM3NTggQzMyLjc3NjQ1NDMsMzguNDI4MDM0MyAzMC42Mjc3NjUyLDM5LjIxMTkzNTkgMjYuODg2ODk1NCwzOS4yMTE5MzU5IFoiPjwvcGF0aD4gICAgICAgICAgICA8L2c+ICAgICAgICA8L2c+ICAgIDwvZz48L3N2Zz4=") center no-repeat;
 }
 
-.summary-card {
+.summary-card, .recipe-card {
 	border: 1px solid #DDDDDD;
 	border-radius: 5px;
     margin-bottom: 20px;
@@ -241,29 +243,42 @@ input[type="submit"] {
     background: white;
 }
 
+/* .summary-card-specs {
+
+} */
+
+.summary-card-specs {
+    display: inline-block;
+    height: 5rem;
+}
+
+.summary-card-specs img{
+    float:left;
+    height: 4rem;
+    vertical-align: middle;
+}
 
 .summary-card:hover{
 	 border: 1px solid #eeeeee;
      box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2),0 0 0 1px rgba(0,0,0,0.08);
      cursor: pointer;
-     padding-bottom: 2px;
 }
 
-.summary-card-content {
+.summary-card-content, .recipe-card-content {
 	padding: 0px 20px;
     white-space: pre-wrap;      /* CSS3 */   
     white-space: -moz-pre-wrap; /* Firefox */   
     white-space: -o-pre-wrap;   /* Opera 7 */    
     word-wrap: break-word;   
-    margin-bottom: -6rem;
+    margin-bottom: -2.5rem;
 }
 
-.summary-card-content h3 {
+.summary-card-content h3, .recipe-card-content h3 {
     margin-bottom: -3rem;;
-    font-size: 1.75vw;
+    /* font-size: 1.75vw; */
 }
 
-.summary-card img {
+.summary-card > img, .recipe-card > img {
     border-radius: 3px 3px 0px 0px;
     width: 100%;
     margin-bottom: -3rem;
@@ -273,13 +288,13 @@ ul {
     list-style: none;
     width: 100%;
     display: block;
-    white-space: nowrap;
+    white-space: initial;
 }
 
 ol {
     list-style-position: inside;
     padding-left: 1rem;
-    margin-bottom: -3rem;
+    /* margin-bottom: 3rem; */
 }
 
 ul li {
@@ -290,3 +305,111 @@ ol li {
     margin-bottom: -3rem;
 }
 
+.credit-text {
+    float:right;
+    font-size: .5rem;
+    margin-bottom: 3rem;
+}
+
+.summary-card-specs li p {
+    vertical-align: middle;
+    margin-top:.5rem;
+    font-size:2rem;
+    font-family: 'Arvo', serif;
+    margin-left: 5rem;
+}
+
+.recipe-card table tr {
+    height: 8rem;
+    font-size: 2rem;
+}
+
+/* Tables
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+table.js-ingredients-table {
+    table-layout: fixed;
+    width: 100%;
+    white-space: nowrap;
+    margin-bottom: -4rem;
+  }
+
+  .js-ingredients-table td {
+    white-space:normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .js-ingredient-image {
+    width: 0%;
+    visibility: hidden;
+    height: 0px;
+  }
+/* Larger than mobile */
+@media (min-width: 400px) {
+    .js-ingredient-image {
+        width: 0%;
+        visibility: hidden;
+        height: 0px;
+      }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+    .js-ingredient-image {
+        width: 0%;
+        visibility: hidden;
+        height: 0px;
+      }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+.js-ingredient-image {
+    width: 20%;
+    height: 80px;
+    visibility: visible;
+    }
+  }
+/* Larger than desktop */
+@media (min-width: 1000px) {}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
+
+  .js-ingredient-image img {
+      display: block;
+      margin: auto;
+  }
+
+  .js-ingredient-serving {
+    width: 20%;
+  }
+  .js-ingredient-name {
+    width: 40%;
+  }
+
+  .js-ingredients-table caption {
+    caption-side: top;
+    text-align: left;
+    font-size: 2.4rem;
+  }
+
+.js-instructions {
+    font-size: 2.4rem;
+    margin-top: 2.4rem;
+    margin-bottom: -8.5rem;
+
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #E1E1E1; }
+th:first-child,
+td:first-child {
+  padding-left: 0; }
+th:last-child,
+td:last-child {
+  padding-right: 0; }
